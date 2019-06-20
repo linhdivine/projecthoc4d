@@ -94,9 +94,15 @@ body {
 .slider {
   background-color: #E1479C;
 }
+.slider .col-menu {
+  padding-right: 5px;
+}
+.slider .main-slider {
+  padding-left: 0;
+}
 
 .main-menu {
-  padding: 10px 0;
+  padding: 14px 0;
   background-color: #FFF;
   width: 100%;
 }
@@ -107,6 +113,7 @@ body {
   list-style: none;
 }
 .main-menu .menu li {
+  position: relative;
   display: block;
   border-bottom: 1px solid #e0e0e0;
 }
@@ -116,6 +123,66 @@ body {
   font-size: 16px;
   padding: 9px 0;
   color: rgba(0, 0, 0, 0.84);
+}
+.main-menu .menu li .menu-block {
+  display: none;
+  top: 10px;
+  width: 400px;
+  position: absolute;
+  z-index: 12;
+  background-color: #fff;
+  transform: translateX(63%);
+  padding-left: 15px;
+  margin-left: 5px;
+}
+.main-menu .menu li .menu-block .title-information {
+  font-size: 20px;
+  color: #F37A53;
+  margin: 5px 0 10px;
+}
+.main-menu .menu li .menu-block .information-left {
+  width: 50%;
+  float: left;
+  overflow: auto;
+}
+.main-menu .menu li .menu-block .information-right {
+  width: 50%;
+  float: left;
+  overflow: auto;
+}
+.main-menu .menu li .menu-block .info {
+  display: block;
+  margin-bottom: 10px;
+}
+.main-menu .menu li .menu-block .info h5 {
+  font-weight: 600;
+  color: #747274;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.main-menu .menu li .menu-block .info span {
+  font-size: 14px;
+  color: #C9CDD4;
+}
+.main-menu .menu li .menu-block:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.main-menu .menu li .menu-block:before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 1px;
+  width: 0;
+  z-index: 1;
+  left: -5%;
+  border: medium solid white;
+  border-width: 10px 10px 10px 10px;
+  border-color: transparent #3095FF transparent transparent;
+}
+.main-menu .menu li:hover .menu-block {
+  display: block;
 }
 
 .slide-adv {
@@ -137,8 +204,30 @@ body {
 .slide-adv .owl-dots .owl-dot span:hover {
   background-color: #3095FF;
 }
-.slide-adv .owl-dots .owl-dot.active span, .slide-adv .owl-theme .owl-dots .owl-dot:hover span {
+.slide-adv .owl-dots .owl-dot.active span,
+.slide-adv .owl-theme .owl-dots .owl-dot:hover span {
   background-color: #3095FF;
+}
+
+.sliders-products {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: #e5e5e5;
+}
+
+.slide-top {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.slide-top .owl-nav {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
 }
 
 @keyframes scaleon {

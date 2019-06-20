@@ -24,7 +24,7 @@ $(function() {
 //.gallery-2
 
 $(function() {
-    $('.gallery-2').owlCarousel({
+    $('.slide-top').owlCarousel({
         loop: true,
         nav: true,
         dots: false,
@@ -33,7 +33,7 @@ $(function() {
         items: 4,
         autoplay: true,
         autoplayTimeout: 4000,
-        navText: ['<i class="fal fa-chevron-double-left"></i>', '<i class="fal fa-chevron-double-right"></i>'],
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
         responsive: {
             0: {
                 items: 1
@@ -42,7 +42,7 @@ $(function() {
                 items: 2
             },
             1000: {
-                items: 4
+                items: 6
             }
         }
     });
