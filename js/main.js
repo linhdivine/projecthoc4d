@@ -21,7 +21,56 @@ $(function() {
     });
 });
 
-//.gallery-2
+// slider-feedback
+
+$(function() {
+    $('.slider-feedback').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: 30,
+        smartSpeed: 500,
+        items: 4,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+});
+$(function() {
+    $('.slider-teacher').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: 30,
+        smartSpeed: 500,
+        items: 4,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+});
 
 $(function() {
     $('.slide-top').owlCarousel({
@@ -47,6 +96,31 @@ $(function() {
         }
     });
 });
+$(function() {
+    $('.slide-bottom').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: 15,
+        smartSpeed: 500,
+        items: 4,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+});
+
 $(document).ready(function() {
     $('.row-gallery').each(function() { // the containers for all your galleries
         $(this).magnificPopup({
