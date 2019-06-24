@@ -401,6 +401,12 @@ body {
   display: block;
   margin-bottom: 5px;
 }
+.product .pro-detail .fake-price {
+  display: inline-block;
+  float: left;
+  color: #828282;
+  text-decoration: line-through;
+}
 .product .pro-detail .link-signup {
   display: inline-block;
   float: right;
@@ -447,6 +453,17 @@ body {
   color: #FF9100;
   border: 1px solid #FF9100;
 }
+.tabmenu-product .list-tabs li a:hover {
+  border-color: transparent;
+  background: #FF9100;
+  color: #FFF;
+}
+.tabmenu-product .list-tabs .active a {
+  border-color: transparent;
+  background: #FF9100;
+  color: #FFF;
+}
+
 .product-tab .pro-img {
   float: left;
   width: 30%;
@@ -761,34 +778,64 @@ body {
 .list-footer {
   display: block;
   width: 100%;
-  text-align: center;
-  margin-bottom: 15px;
+  text-align: left;
+  margin-bottom: 35px;
+}
+.list-footer .list-about {
+  margin-left: 0;
 }
 .list-footer ul {
+  margin-left: 20px;
   list-style: none;
   display: inline-block;
 }
 .list-footer ul li {
-  margin-bottom: 20px;
-  display: flex;
+  display: block;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
-  -webkit-justify-content: center;
-  justify-content: center;
+  text-align: left;
 }
 .list-footer ul li span {
-  width: 50%;
+  display: inline-block;
+  width: 15%;
   padding-top: 15px;
 }
-.list-footer ul li img {
-  margin-right: 10px;
-  max-width: 35%;
+.list-footer ul li span img {
+  display: inline-block;
+  width: 65%;
+  height: auto;
 }
 .list-footer ul li a {
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+}
+
+.app-img {
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+.app-img img {
+  max-width: 75%;
+  display: inline-block;
+}
+
+.logo-footer {
+  display: block;
+  width: 100%;
+}
+.logo-footer img {
+  display: inline-block;
+}
+.logo-footer span {
+  font-size: 28px;
+  padding-top: 3px;
+  width: 70%;
+  text-transform: uppercase;
+  color: #843B8B;
 }
 
 .title-footer {
@@ -799,10 +846,12 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: #FFFFFF;
+  margin-top: 43px;
+  text-align: left;
 }
 
 .fanpage {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 @keyframes scaleon {

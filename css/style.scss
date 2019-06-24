@@ -479,7 +479,12 @@ body {
             display: block;
             margin-bottom: 5px;
         }
-
+        .fake-price {
+        display: inline-block;
+        float: left;
+        color: #828282;
+        text-decoration: line-through;   
+        }
         .link-signup {
             display: inline-block;
             float: right;
@@ -532,7 +537,18 @@ body {
                 color: #FF9100;
                 border: 1px solid #FF9100;
 
-                &:hover {}
+                &:hover {
+                      border-color: transparent;
+                background: #FF9100;
+                color: #FFF;
+                }
+            }
+        }
+        .active {
+            a {
+                border-color: transparent;
+                background: #FF9100;
+                color: #FFF;
             }
         }
     }
@@ -856,9 +872,6 @@ body {
     }
 }
 
-
-
-
 .ads {
     padding: 10px 0;
     background: linear-gradient(90deg, #0FC66E 0%, #0085FF 100%);
@@ -918,27 +931,33 @@ body {
 .list-footer {
 	display: block;
 	width: 100%;
-	text-align: center;
-	margin-bottom: 15px;
+	text-align: left;
+	margin-bottom: 35px;
+    .list-about {
+        margin-left: 0;
+    }
 	ul {
+        margin-left: 20px;
 		list-style: none;
 		display: inline-block;
 		li {
-			margin-bottom: 20px;
-			display: flex;
+            display: block;
+			margin-bottom: 10px;
 			font-size: 14px;
 			line-height: 16px;
 			color: #FFFFFF;
-			-webkit-justify-content: center;
-			        justify-content: center;
+            text-align: left;
 			span {
-				width: 50%;
+                display: inline-block;
+				width: 15%;
 				padding-top: 15px;
+                img {
+
+                    display: inline-block;
+                    width: 65%;
+                    height: auto;
+                }
 			}
-			img {
-				margin-right: 10px;
-					max-width: 35%;
-				}
 			a {
 				font-size: 14px;
 				line-height: 16px;
@@ -947,7 +966,29 @@ body {
 		}
 	}
 }
-
+.app-img {
+    width: 100%;
+    display: block;
+    text-align: left;
+    img {
+        max-width: 75%;
+        display: inline-block;
+    }
+}
+.logo-footer {
+    display: block;
+    width: 100%;
+    img {
+        display: inline-block;
+    }
+    span {
+            font-size: 28px;
+            padding-top: 3px;
+            width: 70%;
+            text-transform: uppercase;
+            color: #843B8B;
+    }
+}
 .title-footer {
 		margin-bottom: 35px;
 	h3 {
@@ -955,12 +996,13 @@ body {
 		font-size: 16px;
 		line-height: 16px;
 		color: #FFFFFF;
-
+        margin-top: 43px;
+        text-align: left;
 	}
 }
 
 .fanpage {
-	padding-top: 60px;
+	padding-top: 30px;
 }
 
 
