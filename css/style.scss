@@ -39,7 +39,9 @@ body {
         clear: both;
     }
 }
-
+.logo-modbile {
+    display: none;
+}
 .logo-brand {
     display: block;
     width: 20%;
@@ -57,7 +59,6 @@ body {
                 max-width: 75%;
             }
         }
-
         span {
             display: block;
             font-size: 28px;
@@ -131,7 +132,7 @@ body {
                 text-decoration: none;
                 display: block;
                 font-size: 16px;
-                padding: 9px 0;
+                padding: 12.3px 0;
                 color: rgba(0, 0, 0, 0.84);
             }
 
@@ -258,7 +259,29 @@ body {
     margin-top: 10px;
     margin-bottom: 20px;
     position: relative;
-
+    .item {
+        display: block;
+        position: relative;
+        .caption-item {
+            top: 3%;
+            right: 5%;
+            position: absolute;
+            span {
+                color: #FFF;
+                font-size: 12px;
+                 .fa-star {
+                   color: #F1C40F;  
+                 }
+            }
+        }
+        .sticker {
+            left: -5%;
+            bottom: 4%;
+            position: absolute;
+            height: auto;
+            max-width: 100%;
+        }
+    }
     .owl-nav {
         position: absolute;
         top: 25%;
@@ -282,11 +305,13 @@ body {
 
         [class*="owl-"] {
             color: #333;
+            opacity: .5;
         }
 
         [class*="owl-"]:hover {
             background: none;
             color: #fff;
+            opacity: 0.9;
         }
     }
 }
@@ -354,10 +379,12 @@ body {
             color: #fff;
             background: #BDBDBD;
             font-size: 24px;
+            opacity: .5;
         }
 
         [class*="owl-"]:hover {
             color: #000;
+            opacity: .9;
         }
 
         &::after {
@@ -720,11 +747,13 @@ body {
 
         [class*="owl-"] {
             color: #333;
+            opacity: .5;
         }
 
         [class*="owl-"]:hover {
             background: none;
             color: #fff;
+            opacity: .9;
         }
     }
 
@@ -816,11 +845,13 @@ body {
 
         [class*="owl-"] {
             color: #333;
+            opacity: .5;
         }
 
         [class*="owl-"]:hover {
             background: none;
             color: #fff;
+            opacity: .9;
         }
     }
 }

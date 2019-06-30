@@ -39,6 +39,10 @@ body {
   clear: both;
 }
 
+.logo-modbile {
+  display: none;
+}
+
 .logo-brand {
   display: block;
   width: 20%;
@@ -121,7 +125,7 @@ body {
   text-decoration: none;
   display: block;
   font-size: 16px;
-  padding: 9px 0;
+  padding: 12.3px 0;
   color: rgba(0, 0, 0, 0.84);
 }
 .main-menu .menu li .menu-block {
@@ -223,6 +227,29 @@ body {
   margin-bottom: 20px;
   position: relative;
 }
+.slide-top .item {
+  display: block;
+  position: relative;
+}
+.slide-top .item .caption-item {
+  top: 3%;
+  right: 5%;
+  position: absolute;
+}
+.slide-top .item .caption-item span {
+  color: #FFF;
+  font-size: 12px;
+}
+.slide-top .item .caption-item span .fa-star {
+  color: #F1C40F;
+}
+.slide-top .item .sticker {
+  left: -5%;
+  bottom: 4%;
+  position: absolute;
+  height: auto;
+  max-width: 100%;
+}
 .slide-top .owl-nav {
   position: absolute;
   top: 25%;
@@ -243,10 +270,12 @@ body {
 }
 .slide-top .owl-nav [class*=owl-] {
   color: #333;
+  opacity: 0.5;
 }
 .slide-top .owl-nav [class*=owl-]:hover {
   background: none;
   color: #fff;
+  opacity: 0.9;
 }
 
 .slide-bottom {
@@ -300,9 +329,11 @@ body {
   color: #fff;
   background: #BDBDBD;
   font-size: 24px;
+  opacity: 0.5;
 }
 .slide-bottom .owl-nav [class*=owl-]:hover {
   color: #000;
+  opacity: 0.9;
 }
 .slide-bottom .owl-nav::after {
   content: "";
@@ -603,10 +634,12 @@ body {
 }
 .slider-feedback .owl-nav [class*=owl-] {
   color: #333;
+  opacity: 0.5;
 }
 .slider-feedback .owl-nav [class*=owl-]:hover {
   background: none;
   color: #fff;
+  opacity: 0.9;
 }
 
 .information {
@@ -683,10 +716,12 @@ body {
 }
 .slider-teacher .owl-nav [class*=owl-] {
   color: #333;
+  opacity: 0.5;
 }
 .slider-teacher .owl-nav [class*=owl-]:hover {
   background: none;
   color: #fff;
+  opacity: 0.9;
 }
 
 .teacher {
